@@ -18,7 +18,7 @@ The Nessus CSV File Comparator is a Bash script that leverages Python scripts to
 ## Usage
 
 ```bash
-./compare.sh <old.csv> <new.csv>
+./compare_nessus_csv.sh <old.csv> <new.csv>
 ```
 
 - `old.csv`: The path to the old Nessus CSV file.
