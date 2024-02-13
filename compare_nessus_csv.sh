@@ -40,4 +40,4 @@ fi
 csvtotable "$output_file" "$output_file.html"
 
 # Remove temporary files
-# rm "$temp_fileA" "$temp_fileB" new_output.csv
+rm "$temp_fileA" "$temp_fileB" new_output.csv
