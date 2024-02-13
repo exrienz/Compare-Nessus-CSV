@@ -2,7 +2,7 @@ import csv
 import sys
 
 def extract_columns(input_file, output_file):
-    columns_to_keep = ["Status", "CVE", "Risk", "Host", "Name", "Solution"]
+    columns_to_keep = ["Status", "CVE", "Risk", "Host", "Port", "Name", "Solution"]
 
     with open(input_file, 'r') as csv_in, open(output_file, 'w', newline='') as csv_out:
         reader = csv.DictReader(csv_in)
