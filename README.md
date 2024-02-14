@@ -15,6 +15,10 @@ This script is designed to compare two Nessus CSV files and generate a report in
 
 The Nessus CSV File Comparator is a Bash script that leverages Python scripts to parse, compare, and generate a report based on two Nessus CSV files.
 
+## Accepted Nessus CSV format
+![GitHub Logo](/sys/requirement.png)
+
+
 ## Usage
 
 ```bash
