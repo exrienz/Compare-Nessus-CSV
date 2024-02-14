@@ -8,13 +8,9 @@ fi
 
 output_folder="output"
 
-# Check if the folder exists
+# Check if the folder exists; create it if not
 if [ ! -d "$output_folder" ]; then
-    # If not, create the folder
-    mkdir "$output_folder"
-    #echo "Folder '$output_folder' created."
-else
-    #echo "Folder '$output_folder' already exists."
+    mkdir "$output_folder" || { echo "Error: Unable to create folder '$output_folder'."; exit 1; }
 fi
 
 # Add ~/.local/bin to PATH if not already present
