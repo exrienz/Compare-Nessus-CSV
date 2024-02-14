@@ -42,19 +42,20 @@ Ensure that the required Python scripts (`parse_csv.py`, `compare.py`, and `delC
 
 ```bash
 git clone https://github.com/yourusername/nessus-csv-comparator.git
-cd nessus-csv-comparator
+cd Compare-Nessus-CSV
+
 ```
 
 2. Ensure the script has execution permissions:
 
 ```bash
-chmod +x compare_nessus_csv.sh
+chmod +x Compare_nessus_csv.sh
 ```
 
 ## Examples
 
 ```bash
-./compare_nessus_csv.sh old_scan.csv new_scan.csv
+./Compare_nessus_csv.sh old_scan.csv new_scan.csv output_report_name.csv
 ```
 
 This will generate a report (`report.csv`) highlighting the differences between the old and new Nessus scans.
