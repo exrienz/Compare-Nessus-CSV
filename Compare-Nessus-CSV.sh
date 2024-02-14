@@ -6,6 +6,17 @@ if [ "$#" -ne 3 ]; then
     exit 1
 fi
 
+output_folder="output"
+
+# Check if the folder exists
+if [ ! -d "$output_folder" ]; then
+    # If not, create the folder
+    mkdir "$output_folder"
+    #echo "Folder '$output_folder' created."
+else
+    #echo "Folder '$output_folder' already exists."
+fi
+
 # Add ~/.local/bin to PATH if not already present
 if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
     export PATH=$PATH:$HOME/.local/bin
