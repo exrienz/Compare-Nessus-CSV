@@ -1,4 +1,18 @@
 #!/bin/bash
+
+
+folders=("output" "scan_output" "input" "input/prod/1" "input/prod/2" "input/prod/3" "input/nonprod/1" "input/nonprod/2" "input/nonprod/3")
+
+for folder in "${folders[@]}"; do
+    if [ ! -d "$folder" ]; then
+        mkdir -p "$folder"
+        #echo "Created folder: $folder"
+    else
+        #echo "Folder already exists: $folder"
+    fi
+done
+
+
 echo " "
 echo "Which function to choose?"
 echo "1. Compare 2 Nessus Scan"
