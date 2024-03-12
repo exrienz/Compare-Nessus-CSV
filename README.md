@@ -63,9 +63,3 @@ chmod +x runner.sh
 
 If you'd like to contribute to this project, feel free to open an issue or submit a pull request. Contributions are welcome!
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
-Make sure to replace `<old.csv>` and `<new.csv>` with actual file paths in the usage section and provide the correct repository URL in the cloning section. Also, include the appropriate license file in your repository if you choose a license other than MIT.
