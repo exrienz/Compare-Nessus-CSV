@@ -22,13 +22,8 @@ The Nessus CSV File Comparator is a Bash script that leverages Python scripts to
 ## Usage
 
 ```bash
-./Compare-Nessus-CSV.sh old_nessus_scan.csv new_nessus_scan.csv output_compared_report_name.csv
+./runner.sh
 ```
-
-- `old.csv`: The path to the old Nessus CSV file.
-- `new.csv`: The path to the new Nessus CSV file.
-
-The script generates a report (`report.csv`) that highlights the differences between the two Nessus scans.
 
 ## Dependencies
 
@@ -49,16 +44,20 @@ cd Compare-Nessus-CSV
 2. Ensure the script has execution permissions:
 
 ```bash
-chmod +x Compare-Nessus-CSV.sh
+chmod +x runner.sh
 ```
 
 ## Examples
 
 ```bash
-./Compare-Nessus-CSV.sh old_nessus_scan.csv new_nessus_scan.csv output_compared_report_name.csv
+./runner.sh
 ```
 
-This will generate a report (`report.csv`) highlighting the differences between the old and new Nessus scans.
+## Folder Structure
+![GitHub Logo](/sys/structure.png)
+
+## RTF Flow
+![GitHub Logo](/sys/rtf.png)
 
 ## Contributing
 
